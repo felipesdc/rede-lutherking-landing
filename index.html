@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rede Cultural Luther King</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonte parecida com a do Canva -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <img
+          src="assets/logo.svg"
+          alt="Logo Rede Cultural Luther King"
+          class="logo"
+        />
+        <nav class="main-nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#analises">Análises</a>
+          <a href="#contribua" class="btn-primary">Contribua</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h1>Coro Rede Cultural Luther King</h1>
+            <p class="lead">
+              Apoie a realização de concertos e acompanhe métricas de alcance e
+              retorno em redes sociais.
+            </p>
+            <div class="actions">
+              <a href="#contribua" class="btn-primary">Contribuir</a>
+              <a href="#analises" class="btn-outline">Ver análises</a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="assets/hero.png" alt="Imagem do coro" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" class="section container">
+        <h2>Sobre o Coro</h2>
+        <p>
+          Fundado em 1970, o Coro da Rede Cultural Luther King atua há mais de
+          cinco décadas promovendo a música coral e contribuindo para a formação
+          cultural e artística no Brasil.
+        </p>
+      </section>
+
+      <!-- Análises -->
+      <section id="analises" class="section container">
+        <h2>Análises de Alcance e Impulsionamento</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Alcance</h3>
+            <p>Métricas de visualizações únicas por postagem.</p>
+          </article>
+          <article class="card">
+            <h3>Retorno</h3>
+            <p>Conversões vindas da landing page.</p>
+          </article>
+          <article class="card">
+            <h3>Compartilhamentos</h3>
+            <p>Engajamento do público nas redes sociais.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contribua -->
+      <section id="contribua" class="section container">
+        <h2>Contribua</h2>
+        <p>
+          Ajude a manter os concertos do coro. Toda contribuição faz diferença.
+        </p>
+        <form class="donation-form">
+          <input type="number" placeholder="Valor (R$)" min="1" required />
+          <button type="submit" class="btn-primary">Doar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Rede Cultural Luther King</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
