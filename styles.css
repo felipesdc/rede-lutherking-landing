@@ -61,13 +61,46 @@ body {
   margin: revert;
 }
 
+/* --- Estilos para Ícones Coloridos das Redes Sociais --- */
+
+/* Remove a cor branca padrão que tínhamos antes e adiciona uma transição suave */
 .social-icons a {
-  color: #fff;
   font-size: 22px;
   text-decoration: none;
   margin-left: 1.5rem;
+  color: inherit; /* Remove a cor branca forçada */
+  transition: opacity 0.2s ease-in-out;
 }
 
+/* Adiciona um efeito de hover para dar feedback ao usuário */
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+/* Cor oficial do Facebook */
+.icon-facebook i {
+  color: #1877f2;
+}
+
+/* Gradiente oficial do Instagram */
+.icon-instagram i {
+  /* 1. Criamos um fundo com o gradiente do Instagram */
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+
+  /* 2. Cortamos o fundo para que ele tenha o formato do texto (do ícone) */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 3. Deixamos a cor do ícone transparente para que o fundo apareça através dele */
+  color: transparent;
+}
 /* Conteúdo principal (botão, título e missão) */
 .main-content {
   margin-top: auto; /* Empurra este bloco para a parte de baixo */
@@ -122,4 +155,10 @@ body {
   text-align: center;
   padding: 1rem 0;
   color: #6b7280;
+}
+
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 3;
 }
