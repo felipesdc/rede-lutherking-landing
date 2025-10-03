@@ -2,104 +2,153 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rede Cultural Luther King</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Fonte parecida com a do Canva -->
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Cabeçalho -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <img
-          src="assets/logo.svg"
-          alt="Logo Rede Cultural Luther King"
-          class="logo"
-        />
-        <nav class="main-nav">
-          <a href="#sobre">Sobre</a>
-          <a href="#analises">Análises</a>
-          <a href="#contribua" class="btn-primary">Contribua</a>
-        </nav>
-      </div>
-    </header>
-
     <main>
-      <!-- Hero -->
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-text">
-            <h1>Coro Rede Cultural Luther King</h1>
-            <p class="lead">
-              Apoie a realização de concertos e acompanhe métricas de alcance e
-              retorno em redes sociais.
-            </p>
-            <div class="actions">
-              <a href="#contribua" class="btn-primary">Contribuir</a>
-              <a href="#analises" class="btn-outline">Ver análises</a>
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/primeira_imagem_carrossel.webp"
+              class="d-block w-100"
+              alt="Apresentação do Coro Luther King"
+            />
+            <div class="carousel-caption-custom">
+              <div class="top-bar container">
+                <p class="text-top-bar">Acompanhe nossa programação</p>
+                <div class="social-icons">
+                  <a href="https://facebook.com/seuperfil" target="_blank"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://instagram.com/seuperfil" target="_blank"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="main-content container">
+                <a href="#historia" class="btn btn-custom-white"
+                  >Conheça nossa história</a
+                >
+                <h1>Coro Luther King</h1>
+                <p class="mission-text">
+                  Cantar a música de todos os tempos. De todos os povos. Em
+                  todos os lugares. Essa é a nossa missão.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="hero-img">
-            <img src="assets/hero.png" alt="Imagem do coro" />
+
+          <div class="carousel-item">
+            <img
+              src="assets/img/segunda_imagem_carrossel.webp"
+              class="d-block w-100"
+              alt="Maestro regendo a orquestra"
+            />
+            <div class="carousel-caption-custom">
+              <div class="top-bar container">
+                <p class="text-top-bar">Acompanhe nossa programação</p>
+                <div class="social-icons">
+                  <a href="https://facebook.com/seuperfil" target="_blank"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://instagram.com/seuperfil" target="_blank"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="main-content container">
+                <a href="#maestro" class="btn btn-custom-white">Saiba mais</a>
+                <h1>Maestro Martinho Lutero Galati</h1>
+                <p class="mission-text">
+                  Fundador do Coro Luther King (1970, São Paulo). Fundador do
+                  Coro Cantosospeso (1987, Milão).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="assets/img/terceira_imagem_carrossel.webp"
+              class="d-block w-100"
+              alt="Detalhe de um instrumento de cordas"
+            />
+            <div class="carousel-caption-custom">
+              <div class="top-bar container">
+                <p class="text-top-bar">Acompanhe nossa programação</p>
+                <div class="social-icons">
+                  <a href="https://facebook.com/seuperfil" target="_blank"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://instagram.com/seuperfil" target="_blank"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="main-content container">
+                <a href="#apoie" class="btn btn-custom-white"
+                  >Saiba como contribuir</a
+                >
+                <h1>Apoie</h1>
+                <p class="mission-text">
+                  O Coro Luther King precisa de amigos e de portas abertas para
+                  manter suas atividades.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- Sobre -->
-      <section id="sobre" class="section container">
-        <h2>Sobre o Coro</h2>
-        <p>
-          Fundado em 1970, o Coro da Rede Cultural Luther King atua há mais de
-          cinco décadas promovendo a música coral e contribuindo para a formação
-          cultural e artística no Brasil.
-        </p>
-      </section>
-
-      <!-- Análises -->
-      <section id="analises" class="section container">
-        <h2>Análises de Alcance e Impulsionamento</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Alcance</h3>
-            <p>Métricas de visualizações únicas por postagem.</p>
-          </article>
-          <article class="card">
-            <h3>Retorno</h3>
-            <p>Conversões vindas da landing page.</p>
-          </article>
-          <article class="card">
-            <h3>Compartilhamentos</h3>
-            <p>Engajamento do público nas redes sociais.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Contribua -->
-      <section id="contribua" class="section container">
-        <h2>Contribua</h2>
-        <p>
-          Ajude a manter os concertos do coro. Toda contribuição faz diferença.
-        </p>
-        <form class="donation-form">
-          <input type="number" placeholder="Valor (R$)" min="1" required />
-          <button type="submit" class="btn-primary">Doar</button>
-        </form>
-      </section>
+      </div>
     </main>
 
-    <!-- Rodapé -->
     <footer class="site-footer">
       <div class="container">
         <p>© <span id="year"></span> Rede Cultural Luther King</p>
       </div>
     </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
